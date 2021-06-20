@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#D5D5D5;
+  }
+
+.container{
+  background-color:#FFFFFF;
+  border: 2.5px solid #D31313;
+}
+
+.nav{
+  background-color:#D31313;
+}
+
+.nav-link{
+color: #FFFFFF;
+font-family: Arial, Helvetica, sans-serif;
+margin-left: 0%;
+margin-right: 0%;
+font-size:20px;
+}
