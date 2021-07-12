@@ -35,6 +35,8 @@ body {
   padding-bottom: 40px;
   text-align: center;
   background-color: #e9d900;
+  border-color: #000000;
+  border-style: solid
 }
 
 #footer p {
