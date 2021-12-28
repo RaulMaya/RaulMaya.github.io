@@ -27,7 +27,7 @@ body {
 .navbar{
   background-color: whitesmoke;
   border-bottom: 0.05cm;
-  border-color: rgb(0, 183, 255);
+  border-color: rgb(255, 0, 0);
   border-bottom-style: solid;
 }
 
@@ -41,4 +41,45 @@ body {
 
 .nav-item:hover {
   opacity: 1;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  width: 600px;
+  grid-gap: 0.5rem;
+  position: relative;
+}
+.image-container .image {
+  position: relative;
+  padding-bottom: 100%;
+}
+.image-container .image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+.image-container .image img:nth-of-type(1) {
+  filter: grayscale(1) brightness(40%);
+}
+.image-container .image img:nth-of-type(2) {
+  -webkit-clip-path: var(--clip-start);
+          clip-path: var(--clip-start);
+  transition: -webkit-clip-path 0.5s;
+  transition: clip-path 0.5s;
+  transition: clip-path 0.5s, -webkit-clip-path 0.5s;
+}
+.image-container .image:hover img:nth-of-type(2) {
+  -webkit-clip-path: var(--clip-end);
+          clip-path: var(--clip-end);
 }
