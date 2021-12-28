@@ -7,7 +7,7 @@ html {
 }
 
 body {
-	background: linear-gradient(-45deg, #0a92d1, #000000, #1c1d1c, #0a92d1);
+	background: linear-gradient(-45deg, #0a92d1, #000000, #000000, #0a92d1);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
 }
@@ -23,46 +23,22 @@ body {
 		background-position: 0% 50%;
 	}
 }
-#footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%; /* Set the fixed height of the footer here */
-  height: 10px;
-  padding-top: 20px;
-  padding-bottom: 40px;
-  text-align: center;
-  background-color: #1a0be2;
-  border-color: #e41717;
-  border-style: solid
+
+.navbar{
+  background-color: whitesmoke;
+  border-bottom: 0.05cm;
+  border-color: rgb(0, 183, 255);
+  border-bottom-style: solid;
 }
 
-#footer p {
-  margin: 0;
-  font-size: 15px;
-  color:#000000
+.nav-link{
+  color: black;
 }
 
-h1 {
-  font-family: tahoma; color: #ffffff;
-  text-align:center;
-  font-size: 30px;
+.nav-item{
+  opacity: 0.4;
 }
 
-h2 {
-  color:#ffffff;
-  text-align:center;
-  font-size: 18px;
-  font-family: tahoma;
-}
-
-p {
-  text-align: center;
-  font-size: 14px;
-}
-
-h3 {
-  color:#000000;
-  text-align:center;
-  font-size: 18px;
-  font-family: tahoma;
+.nav-item:hover {
+  opacity: 1;
 }
